@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      a{
+        margin:0px 13px;
+        cursor:pointer;
+        text-align:
+        font-size:18px;
+        color:white;
+        gap:5px;
+        text-shadow:10px 2px 5px black;
+        background-color:black;
+      }
+      body{
+        background-image:url("https://images.pexels.com/photos/9437795/pexels-photo-9437795.jpeg");
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        font-family:cursive;
+        font-size:20px;
+        height: 100vh;
+        margin:0;
+        color:white;
+        text-align:center;
+      }
+      header{
+        color:white;
+          text-align:center;
+          font-size:30px;
+          text-shadow:10px 2px 5px black;
+      }
+      section{
+           display:none;
+           padding:20px;
+      }
+      #about{
+        background-image:linear-gradient(#1a1a1a);
+        background-size:cover;
+        height:100vh;
+      }
+      #home{
+        background-image:linear-gradient(#1a1a1a);
+        background-size:cover;
+        height: 100vh;
+      }
+      #photos{
+        background-image:linear-gradient(#1a1a1a);
+        background-size:cover;
+        height:100vh;
+      }
+      #contact{
+        background-image:linear-gradient(#1a1a1a);
+        background-size:cover;
+        height:100vh;
+      }
+      form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: black;
+  padding: 10px 0;
+}
+}
+    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+  <body><br>
+      <header>"I'm mohammed sameed"</header><br><hr>Future Web developer<hr>
+      <nav>
+     <a onclick="showSection('home')">&#8962;home</a>
+     <a onclick="showSection('about')">&#128100;about</a>
+     <a onclick="showSection('photos')">&#128065;photos</a>
+    <a onclick="showSection('contact')">&#9993;conctact</a>
+    </nav>
+    
+    <!--home-->
+    <section id="home">
+     <b><h1>Hi, I'm Sameed</h1></b>  
+     <b><h2>Aspiring Web Developer</h2></b>  
+  <p>I am passionate about building modern and responsive websites.  
+  Currently learning HTML, CSS, and JavaScript while creating real-world projects.  
+  "Turning ideas into reality through code."</p>
+    </section>
+    
+    <!--about-->
+     <section id="about">
+             <h1>About Me</h1>  
+ <p> Hello! I'm Sameed, a BCA student and an aspiring web developer<
+ .</p>
+  <p>Iam passionate about creating modern, responsive, and user-friendly websites.</p>
+
+<p>Currently, I am learning HTML, CSS, and JavaScript, and working on real-world projects to improve my skills.  
+
+My goal is to become a professional software developer and build impactful digital solutions.</p>
+     </section>
+     
+     <!--photos-->
+     <section id="photos">
+       <p>photos page</p>
+       <img src="">
+     </section>
+     
+     <!--contact-->
+     <section id="contact">
+       <p>contact page</p>
+  <h1>Contact Me</h1>
+  <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="c7aa2bd8-cd2c-4d40-bf42-c633d513faf2">
+  <input type="text" name="name" placeholder="Enter your Name" required>
+  <input type="email" name="email" placeholder="Enter your Email" required>
+  <textarea name="message" placeholder="Enter your Message" required></textarea>
+  <button type="submit">Submit Form</button>
+</form>
+  
+</section>
+     
+     <script>
+  function showSection(sectionId) {
+   document.querySelectorAll("section").forEach(sec => sec.style.display = "none");
+  document.getElementById(sectionId).style.display = "block";
+       }
+     </script>
+  </body>
+</html>
